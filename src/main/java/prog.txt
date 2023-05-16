@@ -1,6 +1,6 @@
-++OOP (Object-Oriented Programming)
-++Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.’
-++Inheritance. Abstract classes. Polymorphism
+** OOP (Object-Oriented Programming)
+** Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.’
+** Inheritance. Abstract classes. Polymorphism
 Enums in Java
 ++Understanding reference type. Reference Data Types in Java
 
@@ -36,7 +36,7 @@ Working with Arrays in Java. Binary search. Sort.
 ++Object.equals
 ++Exceptions.
 ++Unit testing. JUnit.
-!!LocalDate, LocalDateTime, ZonedDateTime, exercises.
+++LocalDate, LocalDateTime, ZonedDateTime, exercises.
 
 *************************Multithreading*************************************
 ++General introduction to Java multithreading, main problems.
@@ -54,13 +54,13 @@ Working with Arrays in Java. Binary search. Sort.
 ++Annotations.
 ++Spring Framework: Introduction, Context and Beans
 ++Spring Framework: Beans configuration
-Spring Boot: Onion (Hexagonal) architecture
-Spring Boot: Implementing Rest Controllers
+++Spring Boot: Onion (Hexagonal) architecture
+++Spring Boot: Implementing Rest Controllers
 ++Java JDBC API, работа с базами данных
 ++Spring Boot: JPA and databases
---> Spring Boot: validation
+++Spring Boot: validation
 ++Spring Boot: logging and AOP basics
-Spring Boot: scheduled jobs
+++Spring Boot: scheduled jobs
 
 
 

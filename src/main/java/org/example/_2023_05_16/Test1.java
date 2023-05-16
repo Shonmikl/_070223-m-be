@@ -6,6 +6,7 @@ public class Test1 {
     public Test1(int a) {
         this.a = a;
     }
+
     private static int m() {
         return 0;
     }
