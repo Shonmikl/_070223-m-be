@@ -1,0 +1,3 @@
+hashCode -> equals contract --> Lera
+StringBuilder and StringBuffer -->  Vladislav Rud
+toString

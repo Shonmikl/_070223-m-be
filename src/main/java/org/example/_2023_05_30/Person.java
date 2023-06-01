@@ -25,7 +25,7 @@ public class Person implements Comparable<Person>, Serializable {
     }
 }
 
-class SalaryComparable implements Comparator<Person> {
+class SalaryComparator implements Comparator<Person> {
 
     @Override
     //compare(p1, p2)

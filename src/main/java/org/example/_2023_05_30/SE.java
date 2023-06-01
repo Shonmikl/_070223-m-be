@@ -1,9 +1,6 @@
 package org.example._2023_05_30;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class SE {
     public static void main(String[] args) {
@@ -17,5 +14,7 @@ public class SE {
         treeSet.add(25);
         treeSet.add(43);
         treeSet.add(34);
+
+
     }
 }

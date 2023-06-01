@@ -2,3 +2,4 @@ String
 Collection revise
 Compare
 Generic
+Работа со стрингой - задачи
