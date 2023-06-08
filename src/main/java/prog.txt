@@ -15,7 +15,7 @@ Working with Arrays in Java. Binary search. Sort.
 ++Data structure 'Map'. Object.hashCode, HashMap implementation.
 ++Trees, Binary Trees, Tree Map.
 ++Graphs. Practice.
-++Method Reference
+++Method Reference--+
 
 *********************Lambdas & Stream API************************************
 ++Lambdas, Functional Interfaces, Method references.
@@ -32,7 +32,7 @@ Working with Arrays in Java. Binary search. Sort.
 *********************************General and repetition***************************
 ++Regular expressions. Basics. Regular Expressions, Java RegExp
 ++Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
-++Generics,
+++Generics
 ++Object.equals
 ++Exceptions.
 ++Unit testing. JUnit.
