@@ -15,11 +15,11 @@ import java.util.Random;
 @ToString
 public class Person implements Comparable<Person>, Serializable {
     private String name;
-    private int age;
+    private Integer age;
     private int salary;
 
     @Override
-    //p1.      compareTo(    p2  )
+    //p1==this.      compareTo(    p2  )
     public int compareTo(Person o) {
         return this.name.compareTo(o.name);
     }
