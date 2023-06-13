@@ -1,6 +1,6 @@
 package org.example._2023_06_13;
 //Для тех, кому все легко
-public class HardCoreCocaineVersionOfCollectionTasks {
+public class HardCoreCocaineVersionOfCollectionTasks1 {
     /**
      * Создать новую Map<Character, String>,
      * где ключом будет символ из Character[][],
@@ -18,7 +18,8 @@ public class HardCoreCocaineVersionOfCollectionTasks {
 
 
     /**
-     * Создать новую Map<String, Boolean>, где ключом будет строка из String[][], а значением будет соответствующее значение из Boolean[][]. Необходимо выполнить следующие шаги:
+     * Создать новую Map<String, Boolean>, где ключом будет строка из String[][], а значением будет
+     * соответствующее значение из Boolean[][]. Необходимо выполнить следующие шаги:
      *
      * Перебрать элементы первой мапы (Map<Boolean[][], Character[][]>).
      * Для каждого элемента преобразовать Boolean[][] в Character[][],

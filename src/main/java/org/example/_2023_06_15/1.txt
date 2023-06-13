@@ -4,5 +4,5 @@ Set,
 Map,
 Array,
 Циклы все,
-Iterator,
+(List)Iterator,
 Compare - знать
