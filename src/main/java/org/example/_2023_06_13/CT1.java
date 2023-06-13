@@ -2,7 +2,7 @@ package org.example._2023_06_13;
 
 import java.util.List;
 import java.util.Set;
-
+//Перебор коллекций
 public class CT1 {
     //Найти все дубликаты в List<String> и вернуть их в виде нового списка.
     public static List<String> findDup(List<String> list) {

@@ -1,5 +1,5 @@
 package org.example._2023_06_13;
-
+//Создание и компоновка классов
 public class CT3 {
     /**
      * 1:

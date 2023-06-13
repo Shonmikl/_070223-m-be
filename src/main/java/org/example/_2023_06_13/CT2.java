@@ -2,7 +2,7 @@ package org.example._2023_06_13;
 
 import java.util.List;
 import java.util.Set;
-
+//Работа с мапой
 public class CT2 {
 
     /**

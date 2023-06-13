@@ -1,5 +1,5 @@
 package org.example._2023_06_13;
-
+//Работа с итератором
 public class CT4 {
 
     /**
