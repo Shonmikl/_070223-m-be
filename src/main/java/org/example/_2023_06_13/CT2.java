@@ -21,5 +21,4 @@ public class CT2 {
      * 5.Получить все ключи Map<Integer, Boolean>, у которых значение равно true, и вернуть их в виде списка.
      * public static List<Integer> findTrueKeys(Map<Integer, Boolean> inputMap)
      */
-
 }

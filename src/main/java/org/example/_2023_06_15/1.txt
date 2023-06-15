@@ -1,8 +1,8 @@
-List,
-Equals and HashCode,
-Set,
+++List,
+++Equals and HashCode,
+++Set,
 Map,
-Array,
+++Array,
 Циклы все,
-(List)Iterator,
+++(List)Iterator,
 Compare - знать
