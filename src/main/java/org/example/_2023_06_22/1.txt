@@ -1,0 +1,8 @@
+Vladislav - почему мапа не от коллекшн,
+Vlad - LL vs AL
+Vadim - Set<>
+Evgeny - default and static methods in interface
+Dima Shiper - access modifier
+
+
+
