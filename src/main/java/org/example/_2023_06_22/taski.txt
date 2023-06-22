@@ -52,18 +52,19 @@ Set<String> stringSet = new HashSet<>();
 
 - Company
     - name
-    -Set<Employee>
-    -Set<Department>
+    - Set<Employee>
+    - Set<Department>
 
 - Employee
     - name
     - Department(энам)
     - Position(энам)
     - double salary
+
 - Info
-    - Map<Position, String>
+    - Map<Position, List<String>>
     - checker() - на вход сотруника, на выходе String в зависимости от позишн
-    - avgSalary() - на вход демартамент, на выход средняя зп по департаменту
-    - maxSalary() - на вход демартамент, на выход max зп по департаменту + у кого такая зп(имя)
-    - minSalary() - на вход демартамент, на выход min зп по департаменту + у кого такая зп(имя)
-    - getPromotion() - на вход сотрудника. в методе - переход на одну позицию выше и зп на 1,25 больше.
+    - avgSalaryDep() - на вход Set<Employee>, Department, на выход средняя зп по департаменту
+    - maxSalary() - на вход Set<Employee>, Department, на выход max зп по департаменту + у кого такая зп(имя)
+    - minSalary() - на вход Set<Employee>, Department, на выход min зп по департаменту + у кого такая зп(имя)
+    - getPromotion() - на вход сотрудника. в методе - засетить переход на одну позицию выше и зп на 25% больше.
