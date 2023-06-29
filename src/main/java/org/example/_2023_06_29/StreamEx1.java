@@ -3,6 +3,18 @@ package org.example._2023_06_29;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * - создаете стрим
+ *
+ * - разбиваете задание на действия
+ * - находите соответствующий метод
+ * - смотрите какой у него ФИ
+ * - смотрите на сигнатуру абстрактного метода
+ *      - смотрите перегружен ли он или нет
+ * - пишите реализацию
+ *
+ * - собираете терминальным оператором
+ */
 public class StreamEx1 {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
