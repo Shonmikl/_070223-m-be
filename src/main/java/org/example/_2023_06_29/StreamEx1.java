@@ -95,7 +95,7 @@ public class StreamEx1 {
         //findFirst()
         Optional<Integer> optional = find.stream()
                 .findFirst();
-        System.out.println(optional.orElse(0));
+        System.out.println(optional.orElse(-1));
         System.out.println("---------------------------------------");
 
         List<Integer> findQ = Arrays.asList(1, 1, 9, 4, 5, 6);
