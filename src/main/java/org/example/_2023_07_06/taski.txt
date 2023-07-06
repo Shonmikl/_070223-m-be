@@ -34,3 +34,29 @@ List<String> words2 = Arrays.asList("apple", "banana", "cherry", "date");
 
 Задача 7: Разделение строк на отдельные слова и удаление повторений
 List<String> sentences = Arrays.asList("Hello world", "Java is awesome", "Stream API is powerful");
+
+Задача 8: Фильтрация и преобразование строк toUpperCase
+List<String> words3 = Arrays.asList("apple", "banana", "cherry", "date");
+
+Задача 9: Получение среднего значения чисел
+List<Integer> numbers4 = Arrays.asList(1, 2, 3, 4, 5);
+
+Задача 10: Получение списка квадратов чисел
+List<Integer> numbers5 = Arrays.asList(1, 2, 3, 4, 5);
+
+Задача 11: Группировка строк по длине
+List<String> words4 = Arrays.asList("apple", "banana", "cherry", "date", "elderberry");
+
+Задача 12: Проверка, содержатся ли строки в списке
+List<String> words5 =Arrays.asList("apple", "banana", "cherry", "date", "elderberry");
+List<String> searchWords = Arrays.asList("banana", "fig", "grape");
+
+Задача 13: Поиск первой строки, удовлетворяющей условию
+List<String> words6 = Arrays.asList("apple", "banana", "cherry", "date");
+
+Задача 14: Сокращение списка до указанного размера
+List<Integer> numbers6 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+Задача 15: Объединение двух списков в один
+List<Integer> list1 = Arrays.asList(1, 2, 3);
+List<Integer> list2 = Arrays.asList(4, 5, 6);
