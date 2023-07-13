@@ -12,6 +12,7 @@ public class BufferedReaderAndWriter {
 //                 writer.write(character);
 //             } первый способ
 
+
             String line;
             while ((line = reader.readLine()) != null) {
                 writer.write(line + "\n");

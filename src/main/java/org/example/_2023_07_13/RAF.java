@@ -8,7 +8,7 @@ public class RAF {
         RandomAccessFile file = new RandomAccessFile("raf.txt", "rw");
 //        int a = file.read();
 //        System.out.println((char) a);
-//
+
 //        String s = file.readLine();
 //        System.out.println(s);
 

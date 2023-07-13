@@ -8,6 +8,7 @@ public class FileReaderExample {
     public static void main(String[] args) {
         try (FileReader fileReader = new FileReader("wpe.txt")) {
             int characters;
+
             while ((characters = fileReader.read()) != -1) {
                 System.out.print((char) characters);
             }
