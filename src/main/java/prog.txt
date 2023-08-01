@@ -25,16 +25,16 @@
 ++Java Streams: Collectors and Custom Collectors.
 
 *********************Input and Output in Java.*********************
-Introduction to Input and Output in Java
-Reading/Writing of bytes.
-Reading/Writing of strings.
+++Introduction to Input and Output in Java
+++Reading/Writing of bytes.
+++Reading/Writing of strings.
 
 *********************************General and repetition***************************
 Regular expressions. Basics. Regular Expressions, Java RegExp
 ++Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
 ++Generics
 ++Object.equals
-Exceptions.
+++Exceptions.
 Unit testing. JUnit.
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
 
@@ -61,6 +61,8 @@ Spring Boot: JPA and databases
 Spring Boot: validation
 Spring Boot: logging and AOP basics
 Spring Boot: scheduled jobs
+
+21.11.2023 - last class
 
 
 CRUD::
