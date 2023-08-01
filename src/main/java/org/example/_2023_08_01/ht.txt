@@ -1,0 +1,23 @@
+Вам дан текстовый файл, содержащий список email-адресов.
+Извлечь все уникальные домены электронной почты и подсчитать,
+сколько раз каждый домен встречается в списке.
+john.doe@example.com
+jane.smith@example.org
+james.bond@example.com
+jane.smith@example.org
+jane.smith@example.net
+
+Вам дан текстовый файл, содержащий список URL-адресов.
+Найти все URL, которые содержат протокол "https://" и заменить их на "http://"
+https://www.example.com
+http://www.example.org
+https://www.example.net
+https://www.example.com/about
+
+Вам дан текстовый файл, содержащий список кодов продуктов в формате: <product_code>:<quantity>.
+Найти все продукты с количеством больше 10 и вывести их коды и количество.
+ABC123:5
+XYZ789:12
+DEF456:8
+JKL012:15
+MNO345:6
