@@ -7,9 +7,9 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.mockito.Mockito.*;
-
+//todo
 @ExtendWith(MockitoExtension.class)
-class SimpleAuditServiceTest {
+public class SimpleAuditServiceTest {
 
 	@Mock  // actually, this is a stub
 	TradeRepository tradeRepository;
@@ -21,7 +21,7 @@ class SimpleAuditServiceTest {
 	AuditService auditService;
 
 	@Test
-	public void testAuditLogEntryMadeForNewTrade() throws Exception {
+	public void testAuditLogEntryMadeForNewTrade() {
 		when(tradeRepository.createTrade(trade)).thenReturn(anyLong());
 
 		TradingService tradingService = new SimpleTradingService(tradeRepository, auditService);
