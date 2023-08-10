@@ -1,13 +1,13 @@
 package org.example._2023_08_08.mockito.reactor;
 
 public class Sensor {
-    private boolean blocked;
+    private boolean isBlocked;
 
     public boolean isBlocked() {
-        return blocked;
+        return isBlocked;
     }
 
     public void setBlocked(boolean blocked) {
-        this.blocked = blocked;
+        this.isBlocked = blocked;
     }
 }

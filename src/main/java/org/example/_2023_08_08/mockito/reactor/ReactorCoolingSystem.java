@@ -18,10 +18,6 @@ public class ReactorCoolingSystem {
         return on;
     }
 
-    public void setThermometer(Thermometer thermometer) {
-        this.thermometer = thermometer;
-    }
-
     public void setTemperatureThreshold(double temperatureThreshold) {
         this.temperatureThreshold = temperatureThreshold;
     }

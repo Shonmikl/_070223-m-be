@@ -1,4 +1,4 @@
-package org.example._2023_08_08.mockito.test.spiesTest;//package javaProf.unit.mockito.test.spiesTest;
+package org.example._2023_08_08.mockito.test.spiesTest;
 
 import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,7 +17,7 @@ class TestSpyDemo {
 	List<String> listSpy = new ArrayList<>();
 
 	@Test
-	public void testSpyReturnsRealValues() throws Exception {
+	public void testSpyReturnsRealValues() {
 		String str = "Test Spy";
 
 		listSpy.add(str);

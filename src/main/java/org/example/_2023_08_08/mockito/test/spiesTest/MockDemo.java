@@ -1,4 +1,4 @@
-package org.example._2023_08_08.mockito.test.spiesTest;//package javaProf.unit.mockito.test.spiesTest;
+package org.example._2023_08_08.mockito.test.spiesTest;
 
 import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,7 +13,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 class MockDemo {
 
 	@Mock
-	List<String> listMock = new ArrayList<>();
+	List<String> listMock;
 
 	@Test
 	public void testMockReturnsZero() {
@@ -22,6 +22,6 @@ class MockDemo {
 		listMock.add(str);
 
 		verify(listMock).add(str);
-		assertEquals(0, listMock.size());
+		assertEquals(0, listMock.size()); //?
 	}
 }

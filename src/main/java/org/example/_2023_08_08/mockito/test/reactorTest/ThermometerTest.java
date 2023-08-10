@@ -10,7 +10,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-@ExtendWith(MockitoExtension.class) //инжектируем мок объекты
+@ExtendWith(MockitoExtension.class) //InjectMocks
 public class ThermometerTest {
 
     @InjectMocks   // Instantiates Thermometer then injects Sensor mock into it
@@ -21,7 +21,6 @@ public class ThermometerTest {
 
     @Test
     void testWorkingSensor() {
-
         thermometer.setTemperature(250.0);
         when(sensor.isBlocked()).thenReturn(false);
         assertEquals(sensor, thermometer.getSensor());
