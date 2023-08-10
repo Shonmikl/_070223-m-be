@@ -1,0 +1,18 @@
+Класс Book:
+
+Поля:
+String title - название книги.
+String author - автор книги.
+int year - год издания книги.
+
+Класс Library:
+Поля:
+List<Book> books - список книг в библиотеке.
+
+Методы:
+
+void addBook(Book book) - добавляет книгу в список книг библиотеки.
+void removeBook(Book book) - удаляет книгу из списка книг библиотеки.
+List<Book> searchByAuthor(String author) - возвращает список книг по заданному автору.
+List<Book> searchByTitle(String title) - возвращает список книг по заданному названию.
+List<Book> searchByYear(int year) - возвращает список книг по заданному году издания.
