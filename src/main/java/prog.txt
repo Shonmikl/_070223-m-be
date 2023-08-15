@@ -35,13 +35,13 @@
 ++Generics
 ++Object.equals
 ++Exceptions.
-Unit testing. JUnit.
++-Unit testing. JUnit.
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
 
 *************************Multithreading*************************************
 General introduction to Java multithreading, main problems.
 Thread, Runnable, Daemon threads, Interrupted Exception
-Synchronization. Mutex, Monitor. Atomic types..
+Synchronization. Mutex, Monitor. Atomic types.
 Object.wait, Object.join. One-element blocking queue (Messenger).
 JavaUtilConcurrent. Concurrent Collections.
 Threads Executors.
