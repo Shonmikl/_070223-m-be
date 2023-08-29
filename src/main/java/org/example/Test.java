@@ -1,13 +1,17 @@
 package org.example;
 
-public class Test {
-    public int dev(int a, int b) throws ArithmeticException{
-        return a / b;
-    }
-}
+import java.util.HashSet;
+import java.util.Set;
 
-class Test2 {
+public class Test {
     public static void main(String[] args) {
-        new Test().dev(5, 5);
+//        List<Integer> list = new ArrayList<>();
+//        boolean s = list.add(2);
+
+        Set<Integer> set = new HashSet<>();
+        boolean a1 = set.add(4);
+        boolean a2 = set.add(41);
+        boolean a3 = set.add(41);
+        System.out.println(a1 + "||" + a2 + "||" + a3);
     }
 }

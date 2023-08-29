@@ -39,17 +39,17 @@
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
 
 *************************Multithreading*************************************
-General introduction to Java multithreading, main problems.
-Thread, Runnable, Daemon threads, Interrupted Exception
-Synchronization. Mutex, Monitor. Atomic types.
-Object.wait, Object.join. One-element blocking queue (Messenger).
-JavaUtilConcurrent. Concurrent Collections.
-Threads Executors.
+++General introduction to Java multithreading, main problems.
+++Thread, Runnable, Daemon threads, Interrupted Exception
+++Synchronization. Mutex, Monitor. Atomic types.
+++Object.wait, Object.join. One-element blocking queue (Messenger).
+++JavaUtilConcurrent. Concurrent Collections.
+++Threads Executors.
 
 **************************Spring & Spring Boot*********************************
 Apache Maven, сборка проектов.
 Принципы программирования: DRY, YAGNI, KISS,
-SOLID.
+SOLID
 Reflections.
 Annotations.
 Spring Framework: Introduction, Context and Beans
