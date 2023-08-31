@@ -9,13 +9,49 @@
 У каждого блюда должно быть имя и время приготовления в миллисекундах.
 
 Разработайте класс Kitchen, который будет имитировать работу кухни в ресторане.
-У кухни есть повара, которые готовят блюда. Используйте ThreadPool для ограничения количества одновременно работающих поваров.
+У кухни есть повара, которые готовят блюда. Используйте ThreadPool
+для ограничения количества одновременно работающих поваров.
 
 Создайте класс OrderProcessor, который будет получать заказы и передавать их на кухню для приготовления.
 Этот класс также будет имитировать ожидание приготовления блюд и изменение статуса заказа.
 
 Реализуйте механизмы wait и notifyAll для синхронизации работы между классами Kitchen и OrderProcessor.
-Когда заказ передается на кухню, он должен перейти в статус "готовится", а потом "готов", как только все блюда будут приготовлены.
+Когда заказ передается на кухню, он должен перейти в статус "готовится", а потом "готов",
+как только все блюда будут приготовлены.
 
 Добавьте обработку прерывания потоков в случае,
 если заказу требуется время для готовности (например, блюда не готовятся более определенного времени).
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RestaurantApp {
+    public static void main(String[] args) {
+        OrderProcessor orderProcessor = new OrderProcessor(3);
+
+        List<Dish> dishes1 = new ArrayList<>();
+        dishes1.add(new Dish("Pasta", 2000));
+        dishes1.add(new Dish("Salad", 1000));
+        Order order1 = new Order(dishes1);
+
+        List<Dish> dishes2 = new ArrayList<>();
+        dishes2.add(new Dish("Steak", 3000));
+        dishes2.add(new Dish("Soup", 1500));
+        Order order2 = new Order(dishes2);
+
+        Thread orderThread1 = new Thread(() -> orderProcessor.processOrder(order1));
+        Thread orderThread2 = new Thread(() -> orderProcessor.processOrder(order2));
+
+        orderThread1.start();
+        orderThread2.start();
+
+        try {
+            orderThread1.join();
+            orderThread2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        orderProcessor.shutdown();
+    }
+}
