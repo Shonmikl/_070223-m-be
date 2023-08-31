@@ -48,7 +48,7 @@ LocalDate, LocalDateTime, ZonedDateTime, exercises.
 
 **************************Spring & Spring Boot*********************************
 Apache Maven, сборка проектов.
-Принципы программирования: DRY, YAGNI, KISS,
+++Принципы программирования: DRY, YAGNI, KISS,
 SOLID
 Reflections.
 Annotations.
