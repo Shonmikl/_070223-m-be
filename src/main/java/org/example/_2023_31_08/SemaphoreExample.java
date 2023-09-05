@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 
 public class SemaphoreExample {
     public static void main(String[] args) {
-        Semaphore semaphore = new Semaphore(3);
+        Semaphore semaphore = new Semaphore(2);
         new Emp("Paul", semaphore);
         new Emp("Dima", semaphore);
         new Emp("Mariya", semaphore);
@@ -32,13 +32,15 @@ class Emp extends Thread {
     @Override
     public void run() {
         try {
-            semaphore.acquire(2);
+            System.out.println(name + " before....||||| " + Thread.currentThread().getName());
+            semaphore.acquire();
+
             Thread.sleep(3333);
-            System.out.println(name + " is waiting for....||||| " + Thread.currentThread().getName());
+            System.out.println(name + " after....||||| " + Thread.currentThread().getName());
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         } finally {
-            semaphore.release(2);
+            semaphore.release();
         }
     }
 }

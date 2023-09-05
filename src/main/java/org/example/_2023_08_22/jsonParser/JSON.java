@@ -10,7 +10,7 @@ import java.util.Map;
 public class JSON {
     public static void main(String[] args) throws Exception {
         try {
-            InputStream inputStream = JSON.class.getResourceAsStream("/ex.json");
+            InputStream inputStream = JSON.class.getResourceAsStream("report.json");
             assert inputStream != null;
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             StringBuilder stringBuilder = new StringBuilder();
