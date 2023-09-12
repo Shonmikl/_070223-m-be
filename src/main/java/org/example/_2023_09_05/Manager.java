@@ -6,7 +6,6 @@ import lombok.*;
 @Setter
 @ToString
 @NoArgsConstructor
-@AllArgsConstructor
 public class Manager {
     public int id;
     public String name;
@@ -24,7 +23,7 @@ public class Manager {
         System.out.println("NEW DEP: " + department);
     }
 
-    public void  increaseSalary() {
-        salary *= 1.25;
-    }
+//    public void  increaseSalary() {
+//        salary *= 1.25;
+//    }
 }
