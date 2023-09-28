@@ -10,13 +10,8 @@ public interface MyInterface {
     void doSmth2();
 }
 
-interface I1 extends MyInterface {
-
-}
-
-interface I2 extends MyInterface {
-
-}
+interface I1 extends MyInterface {}
+interface I2 extends MyInterface {}
 
 class RealObject implements  MyInterface {
 
