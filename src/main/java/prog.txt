@@ -35,6 +35,7 @@
 ++Generics
 ++Object.equals
 ++Exceptions.
+
 +-Unit testing. JUnit.
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
 
