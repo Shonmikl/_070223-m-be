@@ -1,4 +1,4 @@
-package org.example._2023_09_28;
+package org.example._2023_09_28.proxy.ex;
 
 public interface Car {
    void start();
