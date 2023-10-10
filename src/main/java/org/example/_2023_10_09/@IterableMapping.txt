@@ -1,0 +1,26 @@
+@IterableMapping(dateFormat = "yyyy-MM-DD")
+List<String> get(List<Date> date)
+********************************************************
+@IterableMapping(numberFormat = "#,##0.00")
+List<String> get(List<Number> date)
+********************************************************
+@Mikhail
+List<DestElement> mapToList(List<SourceElement> list);
+
+@IterableMapping(qualifiedBy = Mikhail.class)
+List<String> get(List<Number> date)
+********************************************************
+
+@IterableMapping(elementTargetType = DestElement.class)
+List<DestElement> get(List<SourceElement> date)
+********************************************************
+
+class Test implements MappingControl {
+    @Override
+    public boolean isIgnored(String sm, String tm) {
+    return sm.startWith("a")
+    }
+
+    @IterableMapping(elementMappingControl = Test.class)
+    List<DestElement> get(List<SourceElement> date)
+}
