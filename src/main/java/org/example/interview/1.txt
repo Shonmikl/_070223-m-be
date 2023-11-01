@@ -1,0 +1,144 @@
+-----ROMAN-----
+
+
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY,
+    Username VARCHAR(50)
+);
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    UserID INT,
+    ProductName VARCHAR(100),
+    Amount DECIMAL(10, 2),
+    FOREIGN KEY(UserID) REFERENCES Users(UserID)
+);
+
+- Выбрать имена всех пользователей которые сделали больше 3х заказов
+- Выберите имена пользователей и общую сумму их заказов, у которых общая сумма заказов превышает 1000.
+
+
+Select Users.username
+from Users U
+inner join orders on Orders.UserID = Users.UserID
+Grouping by U.Username
+
+------------------------------------------------------------------------------------------------------------------------
+
+SELECT Users.Username
+
+FROM Users
+
+------------------------------------------------------------------------------------------------------------------------
+
+Hello -> Hlole - true
+Java -> Ajava - false
+* public static boolean isPermutation(String a, String b) {
+	Map<Character, Integer> mapA = a.toLowerCase().binaryStream().map(c -> (char) c).collect(Collection.toMap(c -> c, c -> 1, (oldV, newV) -> oldV + 1));
+  Map<Character, Integer> mapB = b.toLowerCase().binaryStream().map(c -> (char) c).collect(Collection.toMap(c -> c, c -> 1, (oldV, newV) -> oldV + 1));
+  return mapA.equals(mapB);
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+arr - sorted
+[1 2 3 4 5 6 7]  - k==9
+* public static List<Integer> getIndexes(int[] arr, int k) {
+	List<Integer> relult = new ArrayList();
+	int beginIndex = 0;
+  int lastIndex = arr.length-1;
+
+	while (beginIndex < lastIndex) {
+  if (arr[beginIndex] + arr[lastIndex] < k) {
+  	beginIndex++;
+  }
+  if (arr[beginIndex] + arr[lastIndex] > k) {
+  	lastIndex--;
+  }
+  if (arr[beginIndex] + arr[lastIndex] == k) {
+  	result.add(beginIndex);
+    result.add(lastIndex);
+    return result;
+  }
+}
+
+---------------------------------------------------------------------------------------------
+
+import java.util.*;
+
+public class Library {
+
+    private List<Book> books = new ArrayList<>();
+
+    public void addBook(String title, String author, int pages) {
+        Book newBook = new Book(title, author, pages);
+        if (!books.contains(newBook)) {
+            books.add(newBook);
+        } else {
+            System.out.println("This book already exists in the library.");
+        }
+    }
+
+    public List<Book> searchBooks(String keyword) {
+        List<Book> result = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getTitle().contains(keyword) || book.getAuthor().contains(keyword)) {
+                result.add(book);
+            }
+        }
+        return result;
+    }
+
+    public void printBooks() {
+        System.out.println("Books in the library:");
+        for (Book book : books) {
+            System.out.println("Title: " + book.getTitle() + ", Author: " + book.getAuthor() + ", Pages: " + book.getPages());
+        }
+    }
+
+    public void removeBook(String title) {
+        for (Iterator<Book> iterator = books.iterator(); iterator.hasNext();) {
+            Book book = iterator.next();
+            if (book.getTitle().equals(title)) {
+                iterator.remove();
+            }
+        }
+    }
+
+    class Book {+++
+        private String title;
+        private String author;
+        private int pages;
+
+        public Book(String title, String author, int pages) {
+            this.title = title;
+            this.author = author;
+            this.pages = pages;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public String getAuthor() {
+            return author;
+        }
+
+        public int getPages() {
+            return pages;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Book book = (Book) o;
+            return title.equals(book.title) && author.equals(book.author);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(title, author);
+        }
+    }
+}
